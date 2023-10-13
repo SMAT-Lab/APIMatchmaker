@@ -57,7 +57,7 @@ if __name__ == "__main__":
             if minSdk and targetSdk:
                 sha256 = os.path.split(file)[-1][:-4]
                 min1[sha256] = minSdk
-                target[sha256] = target
+                target[sha256] = targetSdk
         except Exception as e:
             print(file)
             print(e)
